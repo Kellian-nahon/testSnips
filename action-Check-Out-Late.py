@@ -40,7 +40,7 @@ def subscribe_intent_callback(hermes, intentMessage):
 
 def action_wrapper(hermes, intentMessage, conf):
     current_session_id = intentMessage.session_id
-    history.append(ASK_LATE_CHECKOUT)
+    #history.append(ASK_LATE_CHECKOUT)
     hermes.publish_continue_session(current_session_id, "Hello World", [INTERRUPT, CONTINUE])
 
 

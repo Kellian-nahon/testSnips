@@ -19,4 +19,3 @@ fi
 
 pip install -r requirements.txt
 
-./settings.py

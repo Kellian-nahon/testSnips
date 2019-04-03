@@ -40,7 +40,7 @@ def subscribe_intent_callback(hermes, intentMessage):
 
 def action_wrapper(hermes, intentMessage, conf):
     current_session_id = intentMessage.session_id
-    history.append(CALLING_RECEPTION)
+    #history.append(CALLING_RECEPTION)
     hermes.publish_end_session(current_session_id, "Hello World")
 
 
