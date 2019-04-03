@@ -40,10 +40,10 @@ def subscribe_intent_callback(hermes, intentMessage):
 
 def action_wrapper(hermes, intentMessage, conf):
     current_session_id = intentMessage.session_id
-    if history[-1] == ASK_LATE_CHECKOUT:
-		hermes.publish_end_session(current_session_id, 'helloworld') 
-	else:
-		hermes.publish_continue_session(current_session_id, 'helloworld', ALL_INTENTS)
+    #if history[-1] == ASK_LATE_CHECKOUT:
+	#	hermes.publish_end_session(current_session_id, 'helloworld') 
+	#else:
+	#	hermes.publish_continue_session(current_session_id, 'helloworld', ALL_INTENTS)
 
 
 if __name__ == "__main__":
